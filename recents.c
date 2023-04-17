@@ -40,6 +40,11 @@ void displayRecents(recentNode *head){      //displays the recents page
     for(int i=0;i<60;i++)
         printf("-");
     printf("\n");
+    if (head==NULL){
+        for(int i=0;i<27;i++)
+            printf(" ");
+        printf("EMPTY!\n");
+    }
     recentNode* p=head;
     while(p!=NULL){
         for(int i=0;i<10;i++){
